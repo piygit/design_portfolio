@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Piyush Sharma | Professional Graphic Designer specializing in high-performance NeoBrutalist visual experiences. Let's build the future with raw aesthetics.">
+    <meta name="keywords"
+        content="Piyush Sharma, Graphic Designer, NeoBrutalist, Portfolio, Visual Design, UI/UX, Branding, Illustrator">
+    <meta name="author" content="Piyush Sharma">
+    <link rel="canonical" href="https://YOUR_DOMAIN.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOUR_DOMAIN.com/">
+    <meta property="og:title" content="PIYUSH SHARMA | Graphic Brutalist">
+    <meta property="og:description"
+        content="Professional Full Stack Developer specializing in high-performance NeoBrutalist web experiences.">
+    <meta property="og:image" content="https://YOUR_DOMAIN.com/Assets/images/phisgaurd.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://YOUR_DOMAIN.com/">
+    <meta property="twitter:title" content="PIYUSH SHARMA | Graphic Brutalist">
+    <meta property="twitter:description"
+        content="Professional Full Stack Developer specializing in high-performance NeoBrutalist web experiences.">
+    <meta property="twitter:image" content="https://YOUR_DOMAIN.com/Assets/images/phisgaurd.png">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TLNG322R');</script>
+    <!-- End Google Tag Manager -->
+    <title>PIYUSH SHARMA | Graphic Brutalist</title>
+
+    <!-- Theme & Performance -->
+    <meta name="theme-color" content="#121212">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Syne:wght@400;500;600;700;800&display=swap"
+        as="style">
+
+    <!-- JSON-LD Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Piyush Sharma",
+      "url": "https://YOUR_DOMAIN.com/",
+      "jobTitle": "Graphic Designer",
+      "image": "https://YOUR_DOMAIN.com/Assets/images/logo.png",
+      "knowsAbout": ["React", "Python", "Java", "Node.js", "Django", "Three.js", "UI/UX Design", "NeoBrutalist Design"],
+      "sameAs": [
+        "https://github.com/Piyush43-ops",
+        "#LEETCODE_LINK_PLACEHOLDER"
+      ],
+      "description": "Professional Full Stack Developer specializing in high-performance NeoBrutalist web experiences. Let's build the future with raw aesthetics."
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="image/svg+xml" rel="icon" href="Assets/images/title_icon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@400;700;900&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neo-yellow': '#FBFF48',
+                        'neo-pink': '#FF70A6',
+                        'neo-blue': '#3B82F6',
+                        'neo-green': '#33FF57',
+                        'neo-purple': '#A855F7',
+                        'neo-orange': '#FF9F1C',
+                        'neo-red': '#FF2A2A',
+                        'neo-white': '#FFFDF5',
+                        'neo-black': '#121212',
+                    },
+                    fontFamily: {
+                        'display': ['"Syne"', 'sans-serif'],
+                        'mono': ['"JetBrains Mono"', 'monospace'],
+                    },
+                    boxShadow: {
+                        'hard': '4px 4px 0px 0px #000',
+                        'hard-sm': '2px 2px 0px 0px #000',
+                        'hard-lg': '8px 8px 0px 0px #000',
+                        'hard-xl': '12px 12px 0px 0px #000',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Styles */
+        body {
+            cursor: none;
+            /* We use a custom cursor */
+            background-color: #FFFDF5;
+            background-image:
+                radial-gradient(#000 1px, transparent 1px),
+                linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+                linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+            background-size: 40px 40px, 100px 100px, 100px 100px;
+        }
+
+        /* Custom Cursor */
+        #cursor {
+            pointer-events: none;
+            position: fixed;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
+        }
+
+        /* Animations */
+        .marquee-container {
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 100s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        .marquee-content-reverse {
+            display: inline-block;
+            animation: scroll-reverse 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes scroll-reverse {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glitch Effect on Hover */
+        .glitch-hover:hover {
+            animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+            color: #FF2A2A;
+        }
+
+        @keyframes glitch-anim {
+            0% {
+                transform: translate(0)
+            }
+
+            20% {
+                transform: translate(-2px, 2px)
+            }
+
+            40% {
+                transform: translate(-2px, -2px)
+            }
+
+            60% {
+                transform: translate(2px, 2px)
+            }
+
+            80% {
+                transform: translate(2px, -2px)
+            }
+
+            100% {
+                transform: translate(0)
+            }
+        }
+    </style>
+</head>
+
+<body class="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLNG322R" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="cursor" class="w-6 h-6 bg-white rounded-full border-2 border-black hidden lg:block"></div>
+
+    <div class="fixed top-0 left-0 h-2 bg-neo-green z-[60] border-b-2 border-black" id="progressBar" style="width: 0%">
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 px-4 py-4 pointer-events-none">
+        <div class="max-w-7xl mx-auto flex justify-between items-center pointer-events-auto">
+            <a href="#"
+                class="bg-neo-white border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover">
+                PIYUSH.
+            </a>
+
+            <div class="hidden md:flex gap-4 bg-white border-2 border-black p-2 shadow-hard">
+                <a href="#about"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/ABOUT</a>
+                <a href="#skills"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/SKILLS</a>
+                <a href="#experience"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/LOGS</a>
+                <a href="#projects"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/WORK</a>
+                <a href="#contact"
+                    class="px-3 py-1 font-mono font-bold text-sm bg-neo-yellow border border-black hover:bg-neo-pink transition-colors cursor-hover">HIRE
+                    ME</a>
+            </div>
+        </div>
+    </nav>
+
+    <section
+        class="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black">
+        <div
+            class="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12">
+        </div>
+        <div
+            class="absolute bottom-1/3 right-[10%] w-24 h-24 bg-neo-pink rounded-full border-4 border-black shadow-hard hidden lg:block animate-pulse">
+        </div>
+        <div class="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none">DESIGN</div>
+
+        <div class="relative z-10 text-center max-w-5xl">
+            <div
+                class="inline-block bg-neo-white border-2 border-black px-4 py-1 mb-6 shadow-hard rotate-[-2deg] reveal">
+                <span class="font-mono font-bold text-neo-green bg-black px-2 mr-2">●</span>
+                <span class="font-mono font-bold">SYSTEM STATUS: ONLINE</span>
+            </div>
+
+            <h1 style="font-family: 'Space Grotesk', sans-serif;"
+                class="text-[11vw] md:text-[8vw] leading-[0.8] tracking-tighter font-black uppercase mb-6 reveal mix-blend-darken">
+                I AM<br>
+                <span class="text-white text-stroke-black" style="-webkit-text-stroke: 3px black;">PIYUSH SHARMA</span>
+            </h1>
+
+            <p
+                class="font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-12 mt-6 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
+                I do whatever i like, but whatever i do is outstanding. <br>
+                <b>Graphic Design • Social Media Creatives • Logo Design • Branding</b>
+            </p>
+        </div>
+    </section>
+
+    <div class="border-b-4 border-black bg-neo-blue py-3 relative z-20">
+        <div class="marquee-container font-mono font-bold text-2xl text-white">
+            <div class="marquee-content">
+                /// OPEN FOR WORK /// GRAPHIC DESIGN /// BRANDING /// Social Media Creatives /// Logo Design /// OPEN
+                FOR WORK //
+            </div>
+        </div>
+    </div>
+
+    <section id="about"
+        class="scroll-mt-24 py-24 px-4 max-w-7xl mx-auto border-x-4 border-black bg-white my-12 shadow-hard-lg">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div class="md:col-span-4 reveal">
+                <div class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
+                    <img src="Assets/images/img.png" alt="Piyush Sharma"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <span
+                        class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
+                </div>
+            </div>
+            <div class="md:col-span-8 flex flex-col justify-center reveal">
+                <h2 class="text-4xl md:text-5xl font-black uppercase mb-6">Who am I?</h2>
+                <p class="font-mono text-xl leading-relaxed mb-6">
+                    I am Piyush Sharma. A graphic designer who believes visual communication has become too sanitized. I
+                    bring <span class="bg-neo-yellow px-1 border border-black">personality</span> back to design.
+                </p>
+                <p class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
+                    > Specialized in Branding, Social Media Creatives, and Story Telling.<br>
+                    > Obsessed with Aesthetics and Perfection.<br>
+                </p>
+
+                <div class="flex gap-4">
+                    <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent">
+                        📍 LOCATION: WORLDWIDE
+                    </div>
+                    <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black">
+                        🟢 STATUS: AVAILABLE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills"
+        class="scroll-mt-24 py-20 bg-neo-black text-neo-white border-y-4 border-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+        </div>
+
+        <div class="max-w-[1400px] mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-white pb-4">
+                <h2 class="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter">
+                    TECH<span class="text-neo-green">_STACK</span>
+                </h2>
+                <div class="flex items-center gap-2 mb-2 md:mb-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                    <p class="font-mono text-neo-green text-sm font-bold">/// SYSTEM_OPTIMIZED</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center md:justify-start">
+
+                <div
+                    class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4 h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOL</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">Adobe
+                        Creative
+                    </div>
+                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">Suite
+                    </div>
+                </div>
+                <div
+                    class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4 h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOL</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">Canva
+                    </div>
+                </div>
+                <div
+                    class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4 h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOL</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">Figma</div>
+                </div>
+                <div
+                    class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4 h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ SKILL</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-[1rem] uppercase">
+                        Typography</div>
+                </div>
+                <div
+                    class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4 h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ SKILL</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-[1rem] uppercase">Text
+                        Design
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="border-t-4 border-white mt-8 pt-4 flex justify-between font-mono text-xs text-gray-500">
+                <span>TOTAL_NODES: 5</span>
+                <span>MEMORY_USAGE: 128MB</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="scroll-mt-24 py-24 px-4 max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase mb-12 tracking-tight text-center">
+            Experience<span class="text-neo-red">_Log</span>
+        </h2>
+
+        <div class="relative border-l-4 border-black ml-4 md:ml-10 space-y-12">
+            <div class="reveal relative pl-8 md:pl-16">
+                <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-yellow border-4 border-black"></div>
+                <div class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all">
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4">
+                        <h3 class="text-xl md:text-2xl font-black uppercase">Freelance</h3>
+                        <span class="font-mono font-bold bg-neo-black text-white px-2 py-1">Apr 2021 - PRESENT</span>
+                    </div>
+                    <p class="font-mono text-xl mb-2 text-neo-yellow font-bold">@ SELF_EMPLOYED</p>
+                    <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
+                        <li>Developing comprehensive brand identities, logo designs, and cohesive visual guidelines for
+                            diverse clients</li>
+                        <li>Designing high-engagement social media creatives, promotional graphics, and modern marketing
+                            collaterals</li>
+                        <li>Delivering pixel-perfect, brutalist-inspired design solutions that bring personality and raw
+                            aesthetics to client projects</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reveal relative pl-8 md:pl-16">
+                <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-red border-4 border-black"></div>
+                <div class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all">
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4">
+                        <h3 class="text-xl md:text-2xl font-black uppercase">Graphic Design & Video Editor</h3>
+                        <span class="font-mono font-bold bg-neo-black text-white px-2 py-1">Feb 2026 - May 2026</span>
+                    </div>
+                    <p class="font-mono text-xl mb-2 text-neo-red font-bold">@ The Brand Pantry</p>
+                    <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
+                        <li>Designing engaging visual assets and marketing collaterals for diverse brand campaigns</li>
+                        <li>Editing and producing high-quality video content for social media and promotional platforms
+                        </li>
+                        <li>Collaborating closely with marketing teams to ensure consistent brand identity across all
+                            media formats</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <section id="projects" class="scroll-mt-24 py-24 bg-neo-yellow border-t-4 border-black px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl md:text-7xl lg:text-8xl font-black mb-16 uppercase tracking-tight text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black"
+                style="font-family: 'Space Grotesk', sans-serif; -webkit-text-stroke: 3px black;">
+                Showcase
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
+                    <div
+                        class="bg-black border-2 border-black relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+                        <img src="Assets/images/Best_4/AKS Static Instagram Post.jpg"
+                            alt="Brand Identity Design - Comprehensive brand identity project"
+                            class="w-full h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors glitch-hover">
+                                Social Media Creative</h3>
+
+                            <p class="font-mono text-sm mb-4 max-w-xs">A comprehensive brand identity project combining
+                                innovative typography and a striking color palette to elevate the client's market
+                                presence.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">Canva</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Photoshop</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Branding</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Typography</span>
+                            </div>
+                        </div>
+                        <a href="#PROJECT_LINK_PLACEHOLDER"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
+                            <i class="ri-arrow-right-up-line text-2xl"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20">
+                    <div
+                        class="bg-black border-2 border-black relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+                        <img src="Assets/images/Best_4/Hyaluronic Power Skin.png"
+                            alt="UI/UX Redesign - Mobile and web interface redesign"
+                            class="w-full h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-blue transition-colors glitch-hover">
+                                Social Media Creative</h3>
+                            <p class="font-mono text-sm mb-4 max-w-xs">A complete overhaul of a legacy digital product,
+                                focusing on improving user experience, accessibility, and modernizing the visual
+                                interface.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">Canva</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Photoshop</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Text Design</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Campaign</span>
+                            </div>
+                        </div>
+                        <a href="#PROJECT_LINK_PLACEHOLDER"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
+                            <i class="ri-arrow-right-up-line text-2xl"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
+                    <div
+                        class="bg-black border-2 border-black relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+                        <img src="Assets/images/Best_4/Masala State Instagram Post.jpg"
+                            alt="Social Media Campaign - High-impact visual graphics"
+                            class="w-full h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-pink transition-colors glitch-hover">
+                                Social Media Creative</h3>
+                            <p class="font-mono text-sm mb-4 max-w-xs">A visually stunning series of social media
+                                graphics designed to drive engagement, featuring bold typography and dynamic
+                                compositions.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">Photoshop</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Canva</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Social Media</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Campaign</span>
+                            </div>
+                        </div>
+                        <a href="#PROJECT_LINK_PLACEHOLDER"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
+                            <i class="ri-arrow-right-up-line text-2xl"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20">
+                    <div
+                        class="bg-black border-2 border-black relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+                        <img src="Assets/images/Others/LOGO/Rare Logo.png"
+                            alt="Packaging Design - Premium product packaging"
+                            class="w-full h-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-orange transition-colors glitch-hover">
+                                Logo Design</h3>
+                            <p class="font-mono text-sm mb-4 max-w-xs">Empowering a product's shelf appeal with a clean,
+                                NeoBrutalist-inspired packaging design built to stand out in a crowded market.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">Photoshop</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Print</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Packaging</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Branding</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Typography</span>
+                            </div>
+                        </div>
+                        <a href="#PROJECT_LINK_PLACEHOLDER"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
+                            <i class="ri-arrow-right-up-line text-2xl"></i>
+                        </a>
+                    </div>
+                </article>
+                <!-- End Projects -->
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="reports" class="py-24 bg-neo-black border-t-4 border-black overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div
+                class="flex items-center gap-2 mb-16 bg-white/5 border-2 border-white/10 p-4 inline-flex shadow-hard shadow-neo-blue/20">
+                <div class="flex gap-2">
+                    <div class="h-3 w-3 bg-red-500 rounded-full border border-black"></div>
+                    <div class="h-3 w-3 bg-yellow-500 rounded-full border border-black"></div>
+                    <div class="h-3 w-3 bg-green-500 rounded-full border border-black"></div>
+                </div>
+                <h2 class="font-mono text-white text-xl font-bold ml-4 tracking-tighter">MORE_WORK.txt</h2>
+                <div class="ml-8 px-2 bg-neo-blue text-black text-[10px] font-black uppercase">LIVE_FEED</div>
+            </div>
+        </div>
+
+        <div class="marquee-container group cursor-hover">
+            <div class="marquee-content flex gap-8 py-12 px-4 select-none">
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/IMG_8713.JPG" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/LinkedIn Banner (1).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/Welcome Banner Landscape.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/Welcome Banner Presentation.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Ab Hui Na Holi Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Girl Carousel Gujiya Instagram Post.jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Holi Celebration Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Holi Haii Carousel Boy Instagram Post.jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Butter Chicken Roll Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Masala State Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Masala State Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Nuri New Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Pad Thai Noodles Umami Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Roll Raja Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/2_monogram.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/CSSS Logo Luxe Lane Clothing.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/Clothing Logo from Kittl.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/Rare Logo.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/Temp Logo (1).svg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Posters/13_ poster draft.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Posters/2f213774-9afd-49f1-9b78-47aa4cd6c76a.JPG"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Posters/CSSS Flutter Workshop Poster (12).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS New Static Instagram Post (1).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS New Static Two Flyer.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS Static Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS Static One Instagram Post (1).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS Static Two Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/1_lip oil.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Anti Frizz Serum Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Haar Shringar Second Post Instagram (4).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hair Mask Green Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hair Regrowth Serum Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hand Cream Instagram Post (2).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hyaluronic Power Skin.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Protect New Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Shriveda Coffee Cream Instagram Post (1).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Sleep Mask Post Instagram (1).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Static-2.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Toner Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/IMG_8713.JPG" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/LinkedIn Banner (1).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/Welcome Banner Landscape.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Banner/Welcome Banner Presentation.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Ab Hui Na Holi Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Girl Carousel Gujiya Instagram Post.jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Holi Celebration Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Clothing/Holi Haii Carousel Boy Instagram Post.jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Butter Chicken Roll Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Masala State Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Masala State Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Nuri New Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Pad Thai Noodles Umami Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Food/Roll Raja Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/2_monogram.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/CSSS Logo Luxe Lane Clothing.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/Clothing Logo from Kittl.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/Rare Logo.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/LOGO/Temp Logo (1).svg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Posters/13_ poster draft.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Posters/2f213774-9afd-49f1-9b78-47aa4cd6c76a.JPG"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Posters/CSSS Flutter Workshop Poster (12).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS New Static Instagram Post (1).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS New Static Two Flyer.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS Static Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS Static One Instagram Post (1).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Real Estate/AKS Static Two Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/1_lip oil.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Anti Frizz Serum Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Haar Shringar Second Post Instagram (4).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hair Mask Green Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hair Regrowth Serum Instagram Post.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hand Cream Instagram Post (2).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Hyaluronic Power Skin.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Protect New Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Shriveda Coffee Cream Instagram Post (1).jpg"
+                        alt="Portfolio Work" class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Sleep Mask Post Instagram (1).jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Static-2.jpg" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-neo-black border-4 border-white/10 p-2 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 flex justify-center items-center">
+                    <img src="Assets/images/Others/Skincare/Toner Instagram Post.png" alt="Portfolio Work"
+                        class="h-64 md:h-80 w-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
+        <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
+            <div
+                class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
+                <span class="font-black text-2xl">START A PROJECT</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">Let's<br>Talk<br>Design.</h2>
+                    <p class="font-mono text-lg mb-8 text-gray-600">
+                        I am currently available for freelance work and open to full-time opportunities.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
+                                <i class="ri-mail-line text-xl"></i>
+                            </div>
+                            <a href="mailto:piyush.shrma05@gmail.com"
+                                class="text-xl font-bold hover:bg-neo-blue cursor-hover">piyush.shrma05@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
+                                <i class="ri-map-pin-line text-xl"></i>
+                            </div>
+                            <span class="text-xl font-bold">Remote / Earth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" name="contact" method="POST" data-netlify="true" class="space-y-6 bg-gray-50 p-6 border-2 border-black">
+                    <!-- Netlify Form Hidden Input -->
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="flex flex-col">
+                        <label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label>
+                        <input type="text" name="name" id="contact-name" placeholder="NAME / COMPANY" required
+                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label>
+                        <input type="email" name="email" id="contact-email" placeholder="EMAIL ADDRESS" required
+                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label>
+                        <textarea name="message" id="contact-message" rows="4" placeholder="PROJECT DETAILS..." required
+                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
+                    </div>
+                    <button type="submit" id="contact-submit"
+                        class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
+                        TRANSMIT DATA
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-16 px-4 border-t-8 border-neo-green font-mono relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+            <div class="col-span-1 md:col-span-2">
+                <h2 class="text-4xl font-black mb-6">PIYUSH.</h2>
+                <p class="text-gray-400 max-w-sm">
+                    Designing for the future with the raw aesthetics of the past. No cookies, no trackers, just pure
+                    design.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Home</a>
+                    </li>
+                    <li><a href="#projects"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Works</a>
+                    </li>
+                    <li><a href="#about"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">About</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SOCIALS</h3>
+                <div class="flex gap-4">
+
+                    <a href="https://github.com/piygit"
+                        class="text-2xl hover:text-neo-yellow transition-colors cursor-hover"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/piyush-sharma-a8249430a/"
+                        class="text-2xl hover:text-neo-purple transition-colors cursor-hover"><i
+                            class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+            <p>© 2026 PIYUSH SHARMA // SYSTEM_END</p>
+        </div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
+            BRUTAL
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById('cursor');
+        const hoverElements = document.querySelectorAll('.cursor-hover, a, button, input, textarea');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursor.style.transform = `translate(-50%, -50%)`;
+        });
+
+        // Add hover effect to cursor
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.width = '60px';
+                cursor.style.height = '60px';
+                cursor.style.backgroundColor = '#FBFF48'; // Neo Yellow
+                cursor.style.mixBlendMode = 'normal';
+                cursor.style.border = '2px solid black';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.width = '24px';
+                cursor.style.height = '24px';
+                cursor.style.backgroundColor = '#fff';
+                cursor.style.mixBlendMode = 'difference';
+                cursor.style.border = 'none';
+            });
+        });
+
+        // Scroll Reveal Logic
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Netlify Forms AJAX Logic
+        const contactForm = document.getElementById('contact-form');
+        const contactSubmitBtn = document.getElementById('contact-submit');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                
+                // Change button text to show loading state
+                const originalBtnText = contactSubmitBtn.innerText;
+                contactSubmitBtn.innerText = 'TRANSMITTING...';
+                contactSubmitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+                const formData = new FormData(contactForm);
+
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                })
+                .then(() => {
+                    contactForm.innerHTML = '<div class="py-20 text-center"><i class="ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block"></i><h3 class="text-2xl font-black uppercase">Transmission Received</h3><p class="font-mono text-sm mt-2">Your message has been successfully routed through Netlify.</p></div>';
+                })
+                .catch(error => {
+                    console.error("Form submission error:", error);
+                    contactSubmitBtn.innerText = 'ERROR! TRY AGAIN';
+                    contactSubmitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    setTimeout(() => {
+                        contactSubmitBtn.innerText = originalBtnText;
+                    }, 3000);
+                });
+            });
+        }
+
+        // Scroll Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+
+
+</html>
