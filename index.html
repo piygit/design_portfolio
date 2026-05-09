@@ -1088,10 +1088,9 @@
                     </div>
                 </div>
 
-                <form id="contact-form" name="contact" method="POST" netlify
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"
                     class="space-y-6 bg-gray-50 p-6 border-2 border-black">
-                    <!-- Netlify Form Hidden Input -->
-                    <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
                     <div class="flex flex-col">
                         <label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label>
                         <input type="text" name="name" id="contact-name" placeholder="NAME / COMPANY" required
@@ -1209,7 +1208,7 @@
 
         revealElements.forEach(el => revealObserver.observe(el));
 
-        // Netlify Forms AJAX Logic
+        // Web3Forms AJAX Logic
         const contactForm = document.getElementById('contact-form');
         const contactSubmitBtn = document.getElementById('contact-submit');
 
@@ -1223,14 +1222,26 @@
                 contactSubmitBtn.classList.add('opacity-50', 'cursor-not-allowed');
 
                 const formData = new FormData(contactForm);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
 
-                fetch("/", {
+                fetch("https://api.web3forms.com/submit", {
                     method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: new URLSearchParams(formData).toString()
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json"
+                    },
+                    body: json
                 })
-                    .then(() => {
-                        contactForm.innerHTML = '<div class="py-20 text-center"><i class="ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block"></i><h3 class="text-2xl font-black uppercase">Transmission Received</h3><p class="font-mono text-sm mt-2">Your message has been successfully routed through Netlify.</p></div>';
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            contactForm.innerHTML = '<div class="py-20 text-center"><i class="ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block"></i><h3 class="text-2xl font-black uppercase">Transmission Received</h3><p class="font-mono text-sm mt-2">Your message has been successfully routed to your inbox.</p></div>';
+                        } else {
+                            console.log(response);
+                            contactSubmitBtn.innerText = 'ERROR! TRY AGAIN';
+                            contactSubmitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                        }
                     })
                     .catch(error => {
                         console.error("Form submission error:", error);
